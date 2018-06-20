@@ -1,0 +1,17 @@
+#:kivy 1.9.1
+#:import Color kivy.utils.get_color_from_hex
+
+<ListLayout@FloatLayout>:
+    size_hint: 1, 1
+    canvas.before:
+        Color:
+            rgba: Color("#f99d42")
+        Rectangle:
+            pos: self.pos
+            size: self.size
+    Label:
+        text: "Lista"
+        font_size: 40
+        color: Color("#000000")
+    
+ListLayout:
